@@ -2,8 +2,8 @@
 const nameEl = document.getElementById("name");
 window.addEventListener("mousemove", (e) => {
   const rect = nameEl.getBoundingClientRect();
-  const cx = rect.left + rect.width / 2;
-  const cy = rect.top + rect.height / 2;
+  const cx = rect.left +rect.width / 2;
+  const cy = rect.top +rect.height / 2;
   const dx = e.clientX - cx;
   const dy = e.clientY - cy;
   const dist = Math.sqrt(dx*dx + dy*dy);
